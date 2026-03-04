@@ -33,4 +33,4 @@
 
 ## 4. Kết quả thực hành lệnh ls:
 
-![ls-l](Images/ls-l.png)
+![ls-l](Tuan-01-Linux-Nen-Tang/Ngay01_LamQuenHeThong/Images/ls -l.png)
