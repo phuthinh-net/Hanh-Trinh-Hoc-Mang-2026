@@ -25,6 +25,8 @@
   
   - `cd ..`: Lùi lại một cấp thư mục.
   
+  - `cd ../../..`: Lùi lại một cấp/ hai cấp / ba cấp thư mục.
+  
   - `cd ~`: Quay về thư mục cá nhân nhanh nhất.
 
 ## 3. Ghi chú thêm
