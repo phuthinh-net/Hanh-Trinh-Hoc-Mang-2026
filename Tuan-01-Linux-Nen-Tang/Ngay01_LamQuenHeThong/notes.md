@@ -30,5 +30,3 @@
 ## 3. Ghi chú thêm
 
 - Đã setup xong Repo và cấu trúc thư mục 3 tuần.
-
-
