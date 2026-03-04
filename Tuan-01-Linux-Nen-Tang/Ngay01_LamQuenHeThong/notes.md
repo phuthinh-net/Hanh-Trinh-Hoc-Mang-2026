@@ -33,4 +33,6 @@
 
 - Đã setup xong Repo và cấu trúc thư mục 3 tuần.
 
-## 
+## 4. Kết quả thực hành lệnh ls:
+
+![Mô tả ảnh](/home/dinh-thinh/Github/Hanh-Trinh-Hoc-Mang-2026/Tuan-01-Linux-Nen-Tang/Ngay01_LamQuenHeThong/Images/ls%20-l.png)
