@@ -1,5 +1,3 @@
-
-
 ## 1. Cấu trúc thư mục đã học
 
 - `/`: Gốc (Root)
@@ -35,4 +33,4 @@
 
 ## 4. Kết quả thực hành lệnh ls:
 
-![Mô tả ảnh](/home/dinh-thinh/Github/Hanh-Trinh-Hoc-Mang-2026/Tuan-01-Linux-Nen-Tang/Ngay01_LamQuenHeThong/Images/ls%20-l.png)
+![ls-l](Images/ls-l.png)
