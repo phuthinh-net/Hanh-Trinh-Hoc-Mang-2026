@@ -1,4 +1,4 @@
-# Nhật ký Ngày 1: Làm quen hệ thống
+
 
 ## 1. Cấu trúc thư mục đã học
 
