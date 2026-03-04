@@ -30,5 +30,5 @@
 ## 3. Ghi chú thêm
 
 - Đã setup xong Repo và cấu trúc thư mục 3 tuần.
-- <img width="809" height="546" alt="image" src="https://github.com/user-attachments/assets/1124a65b-9e89-4237-92bf-d29d3162f7d2" />
+
 
