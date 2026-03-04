@@ -12,6 +12,8 @@
 - `ls`:
   
   - `ls -l`: Xem chi tiết (quyền hạn, ngày tạo).
+    <img width="809" height="546" alt="image" src="https://github.com/user-attachments/assets/2919e6a9-3a53-48a9-b661-3881fa6b85c9" />
+
   
   - `ls -a`: Xem file ẩn (những file bắt đầu bằng dấu chấm `.`).
   
