@@ -34,3 +34,5 @@
 - Đã setup xong Repo và cấu trúc thư mục 3 tuần.
 
 ## 
+
+![](/home/dinh-thinh/snap/marktext/9/.config/marktext/images/2026-03-04-17-49-51-image.png)
