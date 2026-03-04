@@ -33,4 +33,4 @@
 
 ## 4. Kết quả thực hành lệnh ls:
 
-![ls-l](https://github.com/phuthinh-net/Hanh-Trinh-Hoc-Mang-2026/blob/9eefe6804be28ee3538c76dde5abeaeb5bbc20d5/Tuan-01-Linux-Nen-Tang/Ngay01_LamQuenHeThong/Images/ls-l.png)
+![ls-l](%20![ls-l](https://github.com/phuthinh-net/Hanh-Trinh-Hoc-Mang-2026/blob/9eefe6804be28ee3538c76dde5abeaeb5bbc20d5/Tuan-01-Linux-Nen-Tang/Ngay01_LamQuenHeThong/Images/ls-l.png))
