@@ -1,3 +1,7 @@
+# 🐧 Ngày 1: Làm quen hệ thống & Cấu trúc Linux
+
+> **Mục tiêu:** Cài đặt ubuntu , setup mọi thứ và nắm vững các lệnh cơ bản cũng như là cấu trúc thư mục
+
 ## 1. Cấu trúc thư mục đã học
 
 - `/`: Gốc (Root)
