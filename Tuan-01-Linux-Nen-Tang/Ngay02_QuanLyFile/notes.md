@@ -64,3 +64,18 @@
 mkdir -p Project/docs Project/src Project/backup
 touch Project/docs/readme.md Project/src/main.sh
 ```
+
+### 📂 Khởi tạo cấu trúc đa dự án
+
+Lệnh này tạo cùng lúc 2 project với các thư mục và file hoàn toàn khác nhau.
+
+**Sơ đồ cấu trúc:**
+
+* 📁 **Project_A**: `Source/app.js`, `Assets/logo.png`
+* 📁 **Project_B**: `Data/users.csv`, `Backup/old.txt`
+
+**Lệnh thực hiện:**
+
+```bash
+mkdir -p {Project_A/{Source,Assets},Project_B/{Data,Backup}} && touch {Project_A/Source/app.js,Project_A/Assets/logo.png,Project_B/Data/users.csv,Project_B/Backup/old.txt}
+```
