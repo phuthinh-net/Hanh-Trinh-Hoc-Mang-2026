@@ -17,12 +17,18 @@
 ## 2. Ghi chú quan trọng (Key Points)
 
 - **File vs Directory:** - Directory là "cái túi", File là "đồ vật".
+  
   - Dùng `-r` (recursive) khi muốn áp dụng `cp` hoặc `rm` lên thư mục.
+
 - **Mẹo đổi tên:** Linux không có lệnh `rename` riêng biệt phổ biến, ta dùng `mv` (move từ tên cũ sang tên mới).
+
 - **Lưu ý về lệnh `mv`:** 
+  
   1. `mv A B` (Nếu B chưa có) -> Đổi tên A thành B.
   2. `mv A B` (Nếu B có rồi) -> Di chuyển A vào trong B (Đường dẫn mới: `B/A`).
+
 - **Tạo nhiều file và folder :**
+  
   - Sử dụng dấu ngoặc nhọn `{}` giúp bạn viết lệnh ngắn gọn hơn, tránh lặp lại các tiền tố hoặc hậu tố giống nhau.
     
     | Mục tiêu               | Cách thủ công (Cơ bản)              | Cách dùng `{ }` (Pro)        |
@@ -36,6 +42,7 @@
     
     > [!NOTE]
     > **Lưu ý quan trọng:**
+    > 
     > - **Không dùng khoảng trắng:** Bên trong `{ }`, bạn không được để khoảng trắng sau dấu phẩy (Ví dụ: `{src,css}` ✅, `{src, css}` ❌).
     > - **Dãy số `..`:** Sử dụng `{1..10}` để tạo số thứ tự liên tục một cách nhanh chóng.
     > - **Môi trường:** Hoạt động tốt nhất trên Terminal của **Linux** và **macOS** (Bash, Zsh).
@@ -57,5 +64,3 @@
 mkdir -p Project/docs Project/src Project/backup
 touch Project/docs/readme.md Project/src/main.sh
 ```
-
-
