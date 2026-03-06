@@ -38,7 +38,19 @@ Thứ tự phân quyền luôn xuất hiện theo bộ ba: **User - Group - Othe
 
 ---
 
-## 3. Lệnh quan trọng (Key Commands)
+## 3. Cách dùng Số vs Chữ
+
+* **Dùng Số (Thiết lập nhanh):** Thay đổi toàn bộ quyền ngay lập tức.
+  * *Ví dụ:* `chmod 644 file`
+* **Dùng Chữ (Chỉnh sửa lẻ):** Công thức `[Ai] [Phép tính] [Quyền]`
+  * **Ai:** `u` (mình), `g` (nhóm), `o` (khác), `a` (tất cả).
+  * **Phép tính:** `+` (thêm), `-` (bớt).
+  * *Ví dụ:* `chmod +x file` (Cho mọi người quyền chạy).
+  * *Ví dụ:* `chmod u+w file` (Chỉ cho mình quyền sửa).
+
+---
+
+## 4. Lệnh quan trọng (Key Commands)
 
 ### 🔹 chmod (Change Mode) - Đổi quyền
 
@@ -53,27 +65,41 @@ Thứ tự phân quyền luôn xuất hiện theo bộ ba: **User - Group - Othe
 
 ---
 
-## 4. ⚠️ LƯU Ý QUAN TRỌNG (Áp dụng nhiều nhất)
+## 5. ⚠️ LƯU Ý QUAN TRỌNG (Áp dụng nhiều nhất)
 
 * **Quyền `x` với Thư mục:** Đây là chìa khóa để vào cửa. Bạn phải có quyền `x` thì mới có thể `cd` vào bên trong thư mục đó.
+
 * **Quyền `x` file:** Cần để thực thi các file script hoặc phần mềm và để chạy file bắt buộc có `./` phía trước (Vd: `./script.sh`). 
+
 * **Bộ số "kinh điển":** 
+  
   * `644`: Dùng cho mọi file văn bản, ảnh, code (Bạn sửa được, người khác xem được).
   
   * `755`: Dùng cho thư mục hoặc các file muốn chạy (script).
+
 * **Tuyệt đối tránh `777`:** Không bao giờ dùng `777` cho các file quan trọng vì nó mở toang cửa cho virus hoặc các tiến trình lạ phá hoại.
+
 * **Mẹo thực hành:** Khi bị báo "Permission denied", hãy bình tĩnh gõ `ls -l` để xem file đó có đúng là của mình không trước khi dùng đến `sudo`.
 
 --- 
 
-## 5. Thực hành nhanh (Quick Lab)
+## 6. Thực hành Lab (Cấp quyền & Đổi chủ)
 
-1. **Kiểm tra quyền:** `ls -l`
-2. **Thử thách "Tự khóa":**
-   * Tạo file: `touch test.txt`
-   * Khóa sạch quyền: `chmod 000 test.txt`
-   * Thử đọc: `cat test.txt` -> *(Bị từ chối!)*
-3. **Mở khóa lại:** `chmod 644 test.txt`
+**a. Thử thách `chmod` (Khóa & Mở quyền):**
+
+* **Tạo file:** `touch test.txt`
+* **Khóa sạch:** `chmod 000 test.txt`  
+  *(Thử `cat test.txt` sẽ bị báo: **Permission denied**)*.
+* **Mở lại:** `chmod 644 test.txt`  
+  *(Giờ bạn đã có thể đọc và sửa file bình thường)*.
+
+**b. Thử thách `chown` (Cướp & Sang tên):**
+
+* **Tạo file quyền Root:** `sudo touch root_file.txt`
+* **Kiểm tra:** `ls -l`  
+  *(Bạn sẽ thấy cột chủ sở hữu đang ghi là `root`)*.
+* **Lấy lại quyền:** `sudo chown $USER:$USER root_file.txt`
+* **Kết quả:** Chữ `root` sẽ biến thành tên người dùng của bạn. Giờ bạn có thể `rm` (xóa) file này mà không cần dùng đến lệnh `sudo` nữa.
 
 ---
 
