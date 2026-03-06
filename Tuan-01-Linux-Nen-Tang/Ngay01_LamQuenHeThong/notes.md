@@ -1,6 +1,6 @@
 # 🐧 Ngày 1: Làm quen hệ thống & Cấu trúc Linux
 
-> **Mục tiêu:** Cài đặt ubuntu , setup mọi thứ và nắm vững các lệnh cơ bản cũng như là cấu trúc thư mục
+> **Mục tiêu:** Cài đặt ubuntu , setup mọi thứ và nắm vững các lệnh cơ bản cũng như là cấu trúc thư mục.
 
 ## 1. Cấu trúc thư mục đã học
 
@@ -35,4 +35,4 @@
 
 ## 3. Ghi chú thêm
 
-- Đã setup xong Repo và cấu trúc thư mục 3 tuần.
+- Đã setup xong Repo và cấu trúc thư mục.
