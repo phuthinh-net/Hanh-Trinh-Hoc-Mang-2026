@@ -7,6 +7,7 @@
 ### 1. Quản lý Người dùng (User)
 
 * **`adduser`**: Khi chạy lệnh này, Linux thực hiện:
+  
   * Tạo một User mới.
   * **Tạo thư mục Home**: Ví dụ tạo user `sinhvien`, hệ thống tạo `/home/sinhvien` (giống như `/home/dinh-thinh` của bạn).
   * Thiết lập mật khẩu và quyền sở hữu thư mục cho user đó.
@@ -16,13 +17,33 @@
 ### 2. Tiến trình & PID (Process Control)
 
 * **PID (Process ID)**: Mã số định danh duy nhất của mỗi ứng dụng đang chạy. Bạn cần PID để điều khiển hoặc tắt ứng dụng đó.
+
 * **Theo dõi tài nguyên**:
-  * `top`: Xem trực tiếp ứng dụng nào đang chiếm dụng CPU/RAM (Real-time). Nhấn **q** để thoát.
+  
+  * `top`: Xem trực tiếp ứng dụng nào đang chiếm dụng CPU/RAM (Real-time). 
   * `ps aux`: Liệt kê tất cả ứng dụng đang chạy để lấy mã PID.
 
 * Lệnh `kill`:
+  
   * `kill <PID>`: Tắt ứng dụng an toàn.
   * `kill -9 <PID>`: **Cưỡng ép** tắt ngay lập tức (Dùng khi ứng dụng bị treo).
+
+---
+
+## 3. ⌨️ Các phím tắt trong giao diện `top`
+
+| Phím | Chức năng             | Ứng dụng thực tế                                                   |
+|:---- |:--------------------- |:------------------------------------------------------------------ |
+| `q`  | **Thoát (Quit)**      | Quay lại màn hình Terminal.                                        |
+| `M`  | **Sắp xếp RAM**       | Đẩy các ứng dụng ngốn nhiều bộ nhớ nhất lên đầu bảng.              |
+| `P`  | **Sắp xếp CPU**       | Đẩy các ứng dụng đang làm máy lag/nóng lên đầu bảng.               |
+| `k`  | **Kill nhanh**        | Nhập trực tiếp số PID để tắt app ngay trong giao diện `top`.       |
+| `c`  | **Hiện tên đầy đủ**   | Hiển thị đường dẫn chi tiết (giúp nhận diện `gnome-calculator`).   |
+| `u`  | **Lọc theo User**     | Nhập tên user để chỉ xem tiến trình của người đó (vd: dinh-thinh). |
+| `1`  | **Chi tiết CPU**      | Xem thông số hoạt động của từng nhân CPU riêng biệt.               |
+| `V`  | **Dạng cây (Forest)** | Hiển thị quan hệ Cha-Con giữa các tiến trình.                      |
+| `z`  | **Đổi màu**           | Bật/tắt màu sắc để giao diện dễ quan sát hơn.                      |
+| `h`  | **Trợ giúp (Help)**   | Mở bảng hướng dẫn tất cả phím tắt có trong `top`.                  |
 
 ---
 
@@ -70,6 +91,7 @@ ls /home
 ### Bước 2: Truy tìm và Xử lý Process với `grep`
 
 1. Mở một ứng dụng bất kỳ (ví dụ: Firefox hoặc một trình giả lập).
+
 2. Tìm PID của tiến trình đó bằng cách phối hợp `ps` và `grep`:
    
    ```bash
@@ -85,5 +107,3 @@ kill -9 <số_PID_vừa_tìm>
 ---
 
 **Ghi chú:** Việc sử dụng thành thạo `grep` kết hợp với các lệnh khác (dùng dấu gạch đứng `|`) là kỹ năng quan trọng nhất để làm chủ Terminal trên Ubuntu.
-
-
