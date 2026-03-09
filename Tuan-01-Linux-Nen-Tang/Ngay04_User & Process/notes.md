@@ -24,6 +24,16 @@ Sau khi thực hành xong, cần xóa user thử nghiệm để giữ máy ảo 
 > [!WARNING]
 > Không bao giờ xóa user đang đăng nhập. Nếu bị báo lỗi "user is currently used", hãy dùng `top` tìm PID của user đó và `kill` trước khi xóa. 
 
+### 🔍 Giải mã các tùy chọn trong lệnh `ps`
+
+Khi dùng lệnh `ps`, các chữ cái đi kèm sẽ thay đổi cách hiển thị thông tin:
+
+* **`-p` (PID)**: Dùng để chỉ định chính xác số PID bạn muốn soi.
+* **`-f` (Full)**: Hiển thị đầy đủ thông tin (người chạy, thời gian bắt đầu, lệnh đầy đủ).
+
+> [!TIP]
+> **Kết hợp lệnh:** `ps -fp <số_PID>` là cách nhanh nhất để "vạch mặt" một tiến trình lạ đang chạy ngầm trên máy MSI của bạn. 
+
 ### 2. Tiến trình & PID (Process Control)
 
 * **PID (Process ID)**: Mã số định danh duy nhất của mỗi ứng dụng đang chạy. Bạn cần PID để điều khiển hoặc tắt ứng dụng đó.
