@@ -32,18 +32,18 @@
 
 ## 3. ⌨️ Các phím tắt trong giao diện `top`
 
-| Phím | Chức năng             | Ứng dụng thực tế                                                   |
-|:---- |:--------------------- |:------------------------------------------------------------------ |
-| `q`  | **Thoát (Quit)**      | Quay lại màn hình Terminal.                                        |
-| `M`  | **Sắp xếp RAM**       | Đẩy các ứng dụng ngốn nhiều bộ nhớ nhất lên đầu bảng.              |
-| `P`  | **Sắp xếp CPU**       | Đẩy các ứng dụng đang làm máy lag/nóng lên đầu bảng.               |
-| `k`  | **Kill nhanh**        | Nhập trực tiếp số PID để tắt app ngay trong giao diện `top`.       |
-| `c`  | **Hiện tên đầy đủ**   | Hiển thị đường dẫn chi tiết (giúp nhận diện `gnome-calculator`).   |
-| `u`  | **Lọc theo User**     | Nhập tên user để chỉ xem tiến trình của người đó (vd: dinh-thinh). |
-| `1`  | **Chi tiết CPU**      | Xem thông số hoạt động của từng nhân CPU riêng biệt.               |
-| `V`  | **Dạng cây (Forest)** | Hiển thị quan hệ Cha-Con giữa các tiến trình.                      |
-| `z`  | **Đổi màu**           | Bật/tắt màu sắc để giao diện dễ quan sát hơn.                      |
-| `h`  | **Trợ giúp (Help)**   | Mở bảng hướng dẫn tất cả phím tắt có trong `top`.                  |
+| Phím    | Chức năng             | Ứng dụng thực tế                                                   |
+|:------- |:--------------------- |:------------------------------------------------------------------ |
+| **`q`** | **Thoát (Quit)**      | Quay lại màn hình Terminal.                                        |
+| **`M`** | **Sắp xếp RAM**       | Đẩy các ứng dụng ngốn nhiều bộ nhớ nhất lên đầu bảng.              |
+| **`P`** | **Sắp xếp CPU**       | Đẩy các ứng dụng đang làm máy lag/nóng lên đầu bảng.               |
+| **`k`** | **Kill nhanh**        | Nhập trực tiếp số PID để tắt app ngay trong giao diện `top`.       |
+| `c`     | **Hiện tên đầy đủ**   | Hiển thị đường dẫn chi tiết (giúp nhận diện `gnome-calculator`).   |
+| `u`     | **Lọc theo User**     | Nhập tên user để chỉ xem tiến trình của người đó (vd: dinh-thinh). |
+| `1`     | **Chi tiết CPU**      | Xem thông số hoạt động của từng nhân CPU riêng biệt.               |
+| `V`     | **Dạng cây (Forest)** | Hiển thị quan hệ Cha-Con giữa các tiến trình.                      |
+| `z`     | **Đổi màu**           | Bật/tắt màu sắc để giao diện dễ quan sát hơn.                      |
+| `h`     | **Trợ giúp (Help)**   | Mở bảng hướng dẫn tất cả phím tắt có trong `top`.                  |
 
 ---
 
