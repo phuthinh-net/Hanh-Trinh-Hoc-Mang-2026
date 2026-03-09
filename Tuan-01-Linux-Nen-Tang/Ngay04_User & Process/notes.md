@@ -14,6 +14,16 @@
 
 * **`sudo`**: Quyền quản trị tối cao, bắt buộc phải có để thực hiện các thao tác quản lý hệ thống.
 
+### 🗑️ Quy trình dọn dẹp (Cleanup)
+
+Sau khi thực hành xong, cần xóa user thử nghiệm để giữ máy ảo luôn sạch sẽ.
+
+* **Lệnh chuẩn:** `sudo userdel -r <tên_user>`
+* **Tại sao dùng `-r`?** Để xóa sạch cả tài khoản và thư mục dữ liệu trong `/home`. Nếu không có `-r`, thư mục cũ vẫn tồn tại và chiếm dung lượng.
+
+> [!WARNING]
+> Không bao giờ xóa user đang đăng nhập. Nếu bị báo lỗi "user is currently used", hãy dùng `top` tìm PID của user đó và `kill` trước khi xóa. 
+
 ### 2. Tiến trình & PID (Process Control)
 
 * **PID (Process ID)**: Mã số định danh duy nhất của mỗi ứng dụng đang chạy. Bạn cần PID để điều khiển hoặc tắt ứng dụng đó.
