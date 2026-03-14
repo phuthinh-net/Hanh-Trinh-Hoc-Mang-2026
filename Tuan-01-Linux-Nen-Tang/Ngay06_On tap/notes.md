@@ -62,8 +62,6 @@ sudo chmod -R 755 /opt/myapp
 
 ![Screenshot](Images/screenshot4.png)
 
-
-
 ### 4. Quản lý Dịch vụ (Service Management)
 
 Thực hành khởi chạy và kích hoạt một dịch vụ (Ví dụ: Nginx):
