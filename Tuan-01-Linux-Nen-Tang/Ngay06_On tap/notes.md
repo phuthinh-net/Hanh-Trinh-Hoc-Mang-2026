@@ -42,6 +42,8 @@ sudo adduser thuchanh_user
 sudo mkdir -p /opt/myapp/data
 ```
 
+![Screeshot](Images/screenshot2.png)
+
 ### 3. Phân quyền (Permissions)
 
 Gán quyền sở hữu cho user vừa tạo và thiết lập quyền truy cập:
@@ -53,6 +55,12 @@ sudo chown -R thuchanh_user:thuchanh_user /opt/myapp
 # Phân quyền: Chủ sở hữu toàn quyền, nhóm/khác chỉ được đọc và truy cập
 sudo chmod -R 755 /opt/myapp
 ```
+
+![Screenshot](Images/screenshot3.png)
+
+#### With user (thuchanh):
+
+![](/home/dinh-thinh/snap/marktext/9/.config/marktext/images/2026-03-14-16-06-14-image.png)
 
 ### 4. Quản lý Dịch vụ (Service Management)
 
@@ -69,6 +77,10 @@ sudo systemctl enable nginx
 systemctl status nginx
 ```
 
+![Screenshot](Images/screenshot5.png)
+
+
+
 ### 5. Kiểm tra Log hệ thống
 
 Theo dõi các hoạt động của hệ thống và dịch vụ để xử lý sự cố:
@@ -83,3 +95,7 @@ tail -f /var/log/syslog
 # Xem log cụ thể của dịch vụ nginx qua journalctl
 sudo journalctl -u nginx -f
 ```
+
+![Screenshot](Images/screenshot6.png)
+
+![Screenshot](Images/screenshot7.png)
