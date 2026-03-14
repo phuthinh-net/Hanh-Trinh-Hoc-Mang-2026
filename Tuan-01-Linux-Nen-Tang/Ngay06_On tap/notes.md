@@ -34,9 +34,9 @@ sudo adduser thuchanh_user
 # Nhập mật khẩu và thông tin cơ bản khi được yêu cầu
 ```
 
-### 2. Quản lý Thư mục và Tập tin
+![Screenshot](Images/srceenshot1.png)
 
-Tạo cấu trúc thư mục làm việc:
+### 2. Tạo cấu trúc thư mục làm việc:
 
 ```bash
 sudo mkdir -p /opt/myapp/data
@@ -83,9 +83,3 @@ tail -f /var/log/syslog
 # Xem log cụ thể của dịch vụ nginx qua journalctl
 sudo journalctl -u nginx -f
 ```
-
-
-
-
-
-
