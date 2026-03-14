@@ -60,7 +60,9 @@ sudo chmod -R 755 /opt/myapp
 
 #### With user (thuchanh):
 
-![](/home/dinh-thinh/snap/marktext/9/.config/marktext/images/2026-03-14-16-06-14-image.png)
+![Screenshot](Images/screenshot4.png)
+
+
 
 ### 4. Quản lý Dịch vụ (Service Management)
 
@@ -78,8 +80,6 @@ systemctl status nginx
 ```
 
 ![Screenshot](Images/screenshot5.png)
-
-
 
 ### 5. Kiểm tra Log hệ thống
 
