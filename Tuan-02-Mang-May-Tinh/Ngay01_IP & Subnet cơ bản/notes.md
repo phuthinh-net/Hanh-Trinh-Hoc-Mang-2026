@@ -5,36 +5,37 @@
 ### 1. Phân biệt IP Public và IP Private
 
 * **IP Public (Địa chỉ công cộng):**
-
-* Là địa chỉ duy nhất trên toàn thế giới do nhà mạng (ISP) cung cấp.
-
-* Dùng để định danh thiết bị khi đi ra ngoài Internet.
-
-* **Cách kiểm tra nhanh từ Terminal:** `curl ifconfig.me`
+  
+  * Là địa chỉ duy nhất trên toàn thế giới do nhà mạng (ISP) cung cấp.
+  
+  * Dùng để định danh thiết bị khi đi ra ngoài Internet.
+  
+  * **Cách kiểm tra nhanh từ Terminal:** `curl ifconfig.me`
 
 * **IP Private (Địa chỉ nội bộ):**
-
-* Sử dụng trong mạng nội bộ (mạng LAN gia đình, công ty).
-
-* Các dải phổ biến: `192.168.x.x`, `10.x.x.x`, `172.16.x.x`.
-
-* Giúp tiết kiệm địa chỉ IP và bảo mật thiết bị bên trong mạng.
+  
+  * Sử dụng trong mạng nội bộ (mạng LAN gia đình, công ty).
+  
+  * Các dải phổ biến: `192.168.x.x`, `10.x.x.x`, `172.16.x.x`.
+  
+  * Giúp tiết kiệm địa chỉ IP và bảo mật thiết bị bên trong mạng.
 
 ### 2. Kiểm tra IP trên Linux
 
 * **Lệnh thực hiện:** `ip a` (viết tắt của `ip address`).
 * **Thông tin quan trọng cần chú ý:**
-* **lo (loopback):** Địa chỉ `127.0.0.1`, dùng để thiết bị tự kết nối với chính nó.
-* **ens33/ens32/eth0:** Tên card mạng phổ biến trên Ubuntu/VMware.
-* **inet:** Dòng hiển thị địa chỉ IP hiện tại của máy (ví dụ: `192.168.1.10/24`).
+  * **lo (loopback):** Địa chỉ `127.0.0.1`, dùng để thiết bị tự kết nối với chính nó.
+  * **ens33/ens32/eth0:** Tên card mạng phổ biến trên Ubuntu/VMware.
+  * **inet:** Dòng hiển thị địa chỉ IP hiện tại của máy (ví dụ: `192.168.1.10/24`).
 
 ### 3. Khái niệm bổ trợ quan trọng (Phải biết)
 
 * **Subnet Mask:** Giúp hệ thống xác định phần nào là địa chỉ mạng (Network) và phần nào là thiết bị (Host). Cách viết thông dụng: `255.255.255.0` (tương ứng `/24`).
 * **Default Gateway:** Là "cánh cửa" để máy tính đi ra ngoài mạng khác. Xem bằng lệnh: `ip route` (Tìm dòng `default via...`).
 * **DNS (Domain Name System):** Chuyển đổi tên miền (https://www.google.com/url?sa=E&source=gmail&q=google.com) thành IP. Nếu không có DNS, bạn sẽ không lướt web bằng tên miền được.
-* **Công cụ `curl` (Client URL):** - **Tác dụng:** Là "trình duyệt web dạng dòng lệnh". Dùng để **truyền tải dữ liệu, kiểm tra kết nối Internet, tải file hoặc gọi API.**
-* **Tại sao cần dùng:** Cực kỳ nhanh để kiểm tra xem một trang web có "sống" hay không hoặc lấy IP Public mà không cần mở trình duyệt.
+* **Công cụ `curl` (Client URL):** 
+  * **Tác dụng:** Là "trình duyệt web dạng dòng lệnh". Dùng để **truyền tải dữ liệu, kiểm tra kết nối Internet, tải file hoặc gọi API.**
+  * **Tại sao cần dùng:** Cực kỳ nhanh để kiểm tra xem một trang web có "sống" hay không hoặc lấy IP Public mà không cần mở trình duyệt.
 
 ### 4. Bài tập thực hành (Lab)
 
