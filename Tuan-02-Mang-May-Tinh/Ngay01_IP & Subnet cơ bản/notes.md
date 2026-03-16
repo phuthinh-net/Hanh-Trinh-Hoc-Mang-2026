@@ -5,13 +5,19 @@
 ### 1. Phân biệt IP Public và IP Private
 
 * **IP Public (Địa chỉ công cộng):**
+
 * Là địa chỉ duy nhất trên toàn thế giới do nhà mạng (ISP) cung cấp.
+
 * Dùng để định danh thiết bị khi đi ra ngoài Internet.
+
 * **Cách kiểm tra nhanh từ Terminal:** `curl ifconfig.me`
 
 * **IP Private (Địa chỉ nội bộ):**
+
 * Sử dụng trong mạng nội bộ (mạng LAN gia đình, công ty).
+
 * Các dải phổ biến: `192.168.x.x`, `10.x.x.x`, `172.16.x.x`.
+
 * Giúp tiết kiệm địa chỉ IP và bảo mật thiết bị bên trong mạng.
 
 ### 2. Kiểm tra IP trên Linux
@@ -42,8 +48,11 @@ touch Network_Lab/Branch_A/ip_config.txt Network_Lab/Branch_B/ip_config.txt
 #### **🛠 Thực hành trên Terminal**
 
 1. **Kiểm tra IP nội bộ:** Chạy lệnh `ip a` và xác định dòng `inet`.
+
 2. **Kiểm tra IP công cộng:** Chạy lệnh `curl ifconfig.me`.
+
 3. **Kiểm tra kết nối web:** Chạy `curl -I google.com` (Nếu trả về `HTTP/1.1 200 OK` là mạng ngon).
+
 4. **Lưu thông tin vào file:**
    
    ```bash
@@ -53,13 +62,11 @@ touch Network_Lab/Branch_A/ip_config.txt Network_Lab/Branch_B/ip_config.txt
    curl ifconfig.me >> Network_Lab/Branch_A/my_network_info.txt
    ```
 
-```
-
 ### 5. Trạng thái tiến độ
 
-* [x] Hiểu sự khác biệt giữa IP Public và Private.
-* [x] Biết cách dùng `ip a`, `ip route` và `curl`.
-* [x] Tạo thành công cấu trúc thư mục thực hành Lab và lưu thông tin.
+- [x] Hiểu sự khác biệt giữa IP Public và Private.
+- [x] Biết cách dùng `ip a`, `ip route` và `curl`.
+- [x] Tạo thành công cấu trúc thư mục thực hành Lab và lưu thông tin.
 
 ---
 
