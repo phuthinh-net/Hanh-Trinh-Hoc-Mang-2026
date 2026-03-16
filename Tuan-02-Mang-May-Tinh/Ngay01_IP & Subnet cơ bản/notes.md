@@ -49,10 +49,16 @@ touch Network_Lab/Branch_A/ip_config.txt Network_Lab/Branch_B/ip_config.txt
 #### **🛠 Thực hành trên Terminal**
 
 1. **Kiểm tra IP nội bộ:** Chạy lệnh `ip a` và xác định dòng `inet`.
+   
+   ![Screenshot](Images/screenshot1.png)
 
 2. **Kiểm tra IP công cộng:** Chạy lệnh `curl ifconfig.me`.
+   
+   ![Screenshot](Images/screenshot2.png)
 
 3. **Kiểm tra kết nối web:** Chạy `curl -I google.com` (Nếu trả về `HTTP/1.1 200 OK` là mạng ngon).
+   
+   ![Screenshot](Images/screenshot3.png)
 
 4. **Lưu thông tin vào file:**
    
@@ -60,8 +66,12 @@ touch Network_Lab/Branch_A/ip_config.txt Network_Lab/Branch_B/ip_config.txt
    # Ghi thông tin IP nội bộ, Gateway và IP Public vào file report
    ip a > Network_Lab/Branch_A/my_network_info.txt
    ip route >> Network_Lab/Branch_A/my_network_info.txt
-   curl ifconfig.me >> Network_Lab/Branch_A/my_network_info.txt
+   curl ifconfig.me >> Network_Lab/Branch_A/my_network_info.txt          
    ```
+
+        <img title="" src="Images/screenshot4.png" alt="Screenshot" data-align="inline">
+
+
 
 ### 5. Trạng thái tiến độ
 
