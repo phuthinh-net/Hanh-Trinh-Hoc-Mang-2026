@@ -19,8 +19,32 @@ Trong Security và Quản trị mạng, bạn cần biết ít nhất 3 loại n
 ### 3. Sử dụng lệnh `nslookup` thực tế
 
 * **Tra cứu IP (A Record):** `nslookup google.com`
-* **Tra cứu Mail Server (MX Record):** `nslookup -type=mx google.com`
+  
+  ![screenshot](Images/screenshot1.png)
+
+* **Để tra cứu các loại bản ghi cụ thể**, ta sử dụng tham số `-type=[loại]`. 
+  
+  - Dưới đây là bảng tra cứu:
+  
+  | Loại (Type) | Ý nghĩa            | Mục đích sử dụng                                   |
+  | ----------- | ------------------ | -------------------------------------------------- |
+  | **`a`**     | Address            | Tra cứu địa chỉ **IPv4** (mặc định).               |
+  | **`aaaa`**  | IPv6 Address       | Tra cứu địa chỉ **IPv6**.                          |
+  | **`mx`**    | Mail Exchanger     | Tìm máy chủ xử lý **Email**.                       |
+  | **`ns`**    | Name Server        | Xem **máy chủ DNS** đang quản lý tên miền.         |
+  | **`cname`** | Canonical Name     | Tìm tên miền gốc của một **bí danh** (alias).      |
+  | **`txt`**   | Text Record        | Chứa thông tin văn bản (xác thực, chống spam).     |
+  | **`soa`**   | Start of Authority | Xem thông tin **quản trị** (serial, refresh time). |
+  | **`ptr`**   | Pointer            | Tra ngược từ **IP sang Tên miền**.                 |
+  | **`any`**   | Any                | Trả về **tất cả** các bản ghi (hay bị chặn).       |
+  
+  - **Tra cứu Mail Server (MX Record):** `nslookup -type=mx google.com`
+    
+    ![Screenshot](Images/screenshot2.png)
+
 * **Tra cứu bằng Server cụ thể:** `nslookup google.com 8.8.8.8` (hỏi thẳng Google thay vì dùng DNS mặc định).
+  
+  ![Screenshot](Images/screenshot3.png)
 
 ### 4. Thực hành Lab (Ghi vào file)
 
