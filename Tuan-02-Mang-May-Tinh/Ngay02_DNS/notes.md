@@ -5,7 +5,7 @@
 ### 1. DNS là gì? (Domain Name System)
 
 * **Vai trò:** Giống như "Danh bạ điện thoại", biến tên miền (google.com) thành địa chỉ IP (142.250.190.78).
-* **Thứ tự kiểm tra:** Máy tính sẽ tìm theo thứ tự: **File `hosts` trên máy** → **Bộ nhớ Cache** → **Hỏi DNS Server** (như 8.8.8.8).
+* **Thứ tự kiểm tra:** **File `hosts` trên máy** (Ưu tiên cao nhất, có thể dùng để chặn web) → **Bộ nhớ Cache** (Tăng tốc) → Hỏi DNS Server (Khi không có dữ liệu sẵn như 8.8.8.8).
 * **Cấu trúc phân cấp:** Gốc (Root) `.` → Đuôi (TLD) `.com, .vn` → Máy chủ quản lý tên miền (Authoritative Server).
 
 ### 2. Các loại bản ghi (Record) cần nhớ
