@@ -1,0 +1,47 @@
+# 🌐 Ngày 2: Hệ thống phân giải tên miền (DNS)
+
+> **Mục tiêu:** Hiểu cơ chế phân giải tên miền và cách truy vấn các loại bản ghi DNS quan trọng bằng `nslookup`.
+
+### 1. DNS là gì? (Domain Name System)
+
+* **Vai trò:** Giống như "Danh bạ điện thoại", biến tên miền (google.com) thành địa chỉ IP (142.250.190.78).
+* **Thứ tự kiểm tra:** Máy tính sẽ tìm theo thứ tự: **File `hosts` trên máy** → **Bộ nhớ Cache** → **Hỏi DNS Server** (như 8.8.8.8).
+* **Cấu trúc phân cấp:** Gốc (Root) `.` → Đuôi (TLD) `.com, .vn` → Máy chủ quản lý tên miền (Authoritative Server).
+
+### 2. Các loại bản ghi (Record) cần nhớ
+
+Trong Security và Quản trị mạng, bạn cần biết ít nhất 3 loại này:
+
+* **A Record:** Trỏ tên miền về **IPv4** (phổ biến nhất).
+* **CNAME (Canonical Name):** Tên miền bí danh (tên này trỏ về tên kia).
+* **MX Record (Mail Exchange):** Chỉ định server xử lý **Email** (quan trọng khi làm bảo mật hệ thống email).
+
+### 3. Sử dụng lệnh `nslookup` thực tế
+
+* **Tra cứu IP (A Record):** `nslookup google.com`
+* **Tra cứu Mail Server (MX Record):** `nslookup -type=mx google.com`
+* **Tra cứu bằng Server cụ thể:** `nslookup google.com 8.8.8.8` (hỏi thẳng Google thay vì dùng DNS mặc định).
+
+### 4. Thực hành Lab (Ghi vào file)
+
+Thực hiện các lệnh sau để lưu kết quả vào cấu trúc thư mục của bạn:
+
+```bash
+# 1. Tra cứu IP của Google
+nslookup google.com > Network_Lab/Branch_A/dns_check.txt
+
+# 2. Tra cứu Mail Server của một tên miền (ví dụ gmail.com)
+nslookup -type=mx gmail.com >> Network_Lab/Branch_A/dns_check.txt
+
+# 3. Tra cứu bằng DNS Google (8.8.8.8) để đối chiếu
+nslookup github.com 8.8.8.8 >> Network_Lab/Branch_A/dns_check.txt
+```
+
+---
+
+**Trạng thái tiến độ:**
+
+- [x] Hiểu DNS là bộ máy "phiên dịch" theo phân cấp.
+- [x] Phân biệt được bản ghi A (IP) và MX (Email).
+- [x] Sử dụng thành thạo `nslookup` với các tùy chọn `-type`.
+- [x] Lưu kết quả tra cứu vào file thực hành.
